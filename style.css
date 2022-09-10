@@ -245,9 +245,9 @@ form button{
         padding: 0;
     }
     form{
-        width: 70%;
+        width: 90%;
         top: 30%;
-        left: 15%;
+        left: 5%;
     }
 }
 /* RESPONSIVE FOR PHONE SIZE */
