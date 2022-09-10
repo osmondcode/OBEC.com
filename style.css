@@ -1,0 +1,253 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #999; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body
+{
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+.dark-mode
+{
+    background: #000;
+    color: #fff;
+}
+.dark-mode a{
+    color: #fff;
+}
+.dark-mode .fa-moon{
+    color: gold;
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+}
+.dark-mode nav{
+    background: #000;
+}
+.hidden-nav{
+    display: none;
+}
+.nav-left, .nav-right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-left img{
+    width: 200px;
+    height: 110px;
+    margin: 5px 0;
+}
+.nav-right{
+    width: 40%;
+    justify-content: space-around;
+    font-size: 1.5em;
+    padding: 0;
+}
+.nav-links{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-banner{
+    top: 12vh;
+    width: 100%;
+    height: 88vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image-div, .text-div{
+    width: 50%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    object-fit: cover;
+}
+.image-div{
+    margin: 5px 0;
+    width: 47%;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.text-div h3{
+    width: fit-content;
+    font-size: 0.9em;
+    text-align: center;
+    background: #1876f2;
+    color: #000;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.dark-mode .text-div h3{
+    color: #fff;
+}
+.text-div h1{
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.text-div p{
+    text-align: center;
+    font-size: 1.2em;   
+    margin-bottom: 20px;
+}
+.text-div button{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    background: #1876f2;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.dark-mode .text-div button{
+    color: #fff;
+}
+form{
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 75vh;
+    position: relative;
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.fa-circle-xmark{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 1.7em;
+    color: #1876fc;
+}
+form h2{
+    margin: 10px 0;
+    color: #555;
+}
+form input{
+    padding: 0 15px;
+    height: 40px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background: #efefef;
+    border: none;
+}
+form textarea{
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #efefef;
+    border: none;
+}
+form button{
+    width: fit-content;
+    padding: 10px 18px;
+    display: flex;
+    align-self: center;
+    font-size: 1.1em;
+    border-radius: 20px;
+    background: #1876fc;
+}
+.dark-mode form{
+    background: #000;
+    color: #fff;
+    border: 2px dotted #1876fc;
+}
+.dark-mode form h2, .dark-mode form button{
+    color: #fff;
+}
+/* RESPONSIVE FOR TAB SIZE */
+@media (max-width: 1000px){
+    .nav-left{
+        width: 40%;
+    }
+    .nav-right{
+        width: 55%;
+    }
+    .nav-links{
+        width: 70%;
+        font-size: 0.8em;
+    }
+}
+/* RESPONSIVE FOR TAB SIZE */
+
+/* RESPONSIVE FOR PHONE SIZE */
+@media (max-width: 730px){
+    .nav-left img{
+        width: 150px;
+        /* margin-top: 10px; */
+    }
+    .nav-right{
+        width: 60%;
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+    .home-banner{
+        flex-direction: column;
+        padding-top: 20px;
+        height: 120vh;
+    }
+    .image-div, .text-div{
+        width: 95%;
+        height: 58vh;
+        padding: 0;
+    }
+    form{
+        width: 70%;
+        top: 30%;
+        left: 15%;
+    }
+}
+/* RESPONSIVE FOR PHONE SIZE */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <span class="nav-left">
+                <img src="./img/OBEC-logo.png" alt="">
+            </span>
+            <span class="nav-right">
+                <span class="nav-links">
+                    
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#">
+                    about
+                </a>
+
+                <a href="#">
+                    contact
+                </a>
+                </span>
+                <!-- DARK MODE BUTTON -->
+                <i class="fa-solid fa-moon" onclick="darkMode()"></i>
+                <!-- DARK MODE BUTTON -->
+            </span>
+        </nav>
+
+        
+        <!-- NAVIGATION BAR -->
+        <span class="home-banner">
+            <!-- BANNER IMAGE DIV -->
+            <span class="image-div">
+                <img src="./img/banner-image.jpg" alt="">
+            </span>
+            <!-- BANNER IMAGE DIV -->
+
+            <!-- BANNER TEXT DIV -->
+            <span class="text-div">
+                <h3>welcome to OMO BROS ENGINEERING COMPANY</h3>
+                <h1>SALES & REPAIR</h1>
+                <p>We offer you the best customering service and turn you vision into reality.</p>
+                <button class="request" onclick="requestForm()">
+                    Request our service 
+                </button>
+            </span>
+            <!-- BANNER TEXT DIV -->
+
+            <!-- BANNER REQUEST QUOTE MODAL -->
+            <span class="quote-modal">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <i class="fa-solid fa-circle-xmark" onclick="requestForm()"></i>
+                    <h2>CONTACT US FOR OUR SERVICE</h2>
+                    <input type="text"  id="name" placeholder="Enter Name" required>
+                    <input type="email"  id="email" placeholder="Email address" required>
+                    <input type="text"  id="phone" placeholder="phone no." required>
+                    <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </span>
+            <!-- BANNER REQUEST QUOTE MODAL -->
+        </span>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
