@@ -24,12 +24,15 @@ function sendEmail(){
         Host : "smtp.gmail.com",
         Username : "osmondcode@gmail.com",
         Password : "passcode$2022",
-        To : 'osmondcode@gmail.com',
+        To : 'omobrosengr@gmail.com',
         From : document.getElementById('email').value,
-        Subject : "Requested A Quote",
-        Body : "And this is the body"
+        Subject : "Requested A Your Service",
+        Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone no: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
     }).then(
-      message => alert(message)
+      message => alert('Message sent successfully')
     );
 }
 // SEND EMAIL SCRIPT

@@ -227,6 +227,7 @@ form button{
 @media (max-width: 730px){
     .nav-left img{
         width: 150px;
+        height: 90px;
         /* margin-top: 10px; */
     }
     .nav-right{
@@ -251,3 +252,15 @@ form button{
     }
 }
 /* RESPONSIVE FOR PHONE SIZE */
+
+/* RESPONSIVE FOR MINI PHONE */
+@media (max-width: 500px){
+    .nav-links{
+        display: none;
+    }
+    .nav-right{
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+/* RESPONSIVE FOR MINI PHONE */
