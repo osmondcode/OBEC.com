@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body
@@ -251,6 +251,10 @@ hr{
     display: flex;
     align-self: center;
 }
+.dark-mode hr{
+    border: 1px solid #efefef;
+    
+}
 /* ABOUT US CONTENT */
 .about-banner{
     width: 100%;
@@ -347,8 +351,12 @@ hr{
         top: 3%;
     }
     .about-banner > .text-div h1{
-        margin-top: 40px;
+        margin-top: 55px;
     }
+    .about-banner > .text-div p{
+        text-align: center;
+    }
+
     .about-banner > .image-div{
         height: 45%;
         width: 90%;
